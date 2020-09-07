@@ -4,12 +4,6 @@ import loadManifest from "$server/utils/loadManifest.js";
 import template from "$client/index.html";
 import ryota from "$ryota/index";
 
-on("final", async () => {
-	const rendered = await render(ryota, {
-		url: "/articol/53bcdf79-2d5c-44bf-a647-11ada60e7367",
-	});
-});
-
 on("ready", async () => {
 	const http = await use("nore/http");
 
