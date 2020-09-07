@@ -4,6 +4,7 @@
 	import Loader from "$ryota/components/Loader";
 	import facebook from "$public/icons/facebook.svg";
 	import twitter from "$public/icons/twitter.svg";
+	import ro from "$ryota/lang/ro";
 
 	export function load({ id }) {
 		return http.get(`/api/notion/page/${id}`).then(reply => reply.body);
@@ -84,7 +85,25 @@
 
 <svelte:head>
 	{#if data}
+		<!-- Meta Tags -->
 		<title>{data.title}</title>
+		<meta name="title" content={data.title} />
+		<meta name="description" content={data.attributes.Tagline} />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="{ro.meta.url}/articol/{data.id}" />
+		<meta property="og:title" content={data.title} />
+		<meta property="og:description" content={data.attributes.Tagline} />
+		<meta property="og:image" content="{ro.meta.url}/featured.jpg" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="{ro.meta.url}/articol/{data.id}" />
+		<meta property="twitter:title" content={data.title} />
+		<meta property="twitter:description" content={data.attributes.Tagline} />
+		<meta property="twitter:image" content="{ro.meta.url}/featured.jpg" />
+		<!-- End Meta Tags -->
 	{/if}
 </svelte:head>
 

@@ -1,3 +1,9 @@
+meta:
+  url: https://ryota.ro
+  title: Ryota - Institut de Dezvoltare Socială și Emoțională
+  description: Ryota susține dezvoltarea emoțională și socială folosind tehnici
+    vesele pentru copii și metode productive pentru adulți
+
 menu:
 - label: Ateliere
   link: /ateliere

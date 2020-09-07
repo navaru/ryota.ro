@@ -109,7 +109,25 @@
 </style>
 
 <svelte:head>
-	<title>Institut de Dezvoltare Socială și Emoțională</title>
+	<!-- Meta Tags -->
+	<title>{ro.meta.title}</title>
+	<meta name="title" content={ro.meta.title} />
+	<meta name="description" content={ro.meta.description} />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content={ro.meta.url} />
+	<meta property="og:title" content={ro.meta.title} />
+	<meta property="og:description" content={ro.meta.description} />
+	<meta property="og:image" content="{ro.meta.url}/featured.jpg" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content={ro.meta.url} />
+	<meta property="twitter:title" content={ro.meta.title} />
+	<meta property="twitter:description" content={ro.meta.description} />
+	<meta property="twitter:image" content="{ro.meta.url}/featured.jpg" />
+	<!-- End Meta Tags -->
 </svelte:head>
 
 <b class="container">
