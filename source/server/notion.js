@@ -4,11 +4,10 @@ import { http } from "@nore/pwa";
 import Notion from "@nore/notion";
 import config from "$server/config";
 
-const cache = new Map();
-
 on("ready", async () => {
 	const http = await use("nore/http");
 	const notion = new Notion({ token: config.notion.token });
+	const cache = new Map();
 
 	http.get("/api/notion/page/:id", async ({ params }, reply) => {
 		if (params.id?.length < 32) {
@@ -38,6 +37,6 @@ on("ready", async () => {
 			cache.clear();
 		}
 
-		return { ok: 1 };
+		return { sync: params.id };
 	});
 });
