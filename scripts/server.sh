@@ -35,11 +35,11 @@ sync() {
 }
 
 sync_public() {
-	sync "public" "$PROJECT_PATH/public"
+	sync "public" "$PROJECT_PATH"
 }
 
 sync_database() {
-	sync "database" "$PROJECT_PATH/database"
+	sync "database" "$PROJECT_PATH"
 }
 
 restart_server() {
@@ -62,8 +62,8 @@ deploy_client() {
 }
 
 deploy() {
-	deploy_server
 	deploy_client
+	deploy_server
 }
 
 case $1 in
