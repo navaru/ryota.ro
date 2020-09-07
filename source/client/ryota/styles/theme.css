@@ -1,0 +1,119 @@
+:root {
+	/*
+			DEFAULTS
+	*/
+	--html-selection-color: #2f2f2f;
+	--html-selection-background: #f7f778;
+	--html-mark-background: #ffea9f;
+
+	/*
+			COLORS
+	*/
+	--color-dark-10: #2f2f2f;
+	--color-dark-20: #393939;
+	--color-dark-30: #434343;
+	--color-dark-40: #4d4c4c;
+	--color-dark-50: #585858;
+	--color-dark-60: #676767;
+	--color-dark-70: #7b7a7a;
+	--color-dark-80: #999999;
+
+	--color-light-10: #dadada;
+	--color-light-20: #c8c8c8;
+	--color-light-30: #bcbcbc;
+	--color-light-40: #aeaeae;
+	--color-light-50: #9e9e9e;
+	--color-light-60: #8d8c8c;
+	--color-light-70: #787777;
+	--color-light-80: #5c5c5c;
+
+	--color-white: #ffffff;
+	--color-black: var(--color-dark-10);
+	--color-brand: #dccbb6;
+
+	--color-background: #efe8de;
+	--color-background-highlight: #e8ded1;
+	--color-foreground: var(--color-black);
+
+	--color-critical-lighter: #ff1a1a;
+	--color-critical: #ee0000;
+	--color-critical-darker: #cc0000;
+
+	--color-success-lighter: #3291ff;
+	--color-success: #0070f3;
+	--color-success-darker: #0366d6;
+
+	--color-warning-lighter: #f7b955;
+	--color-warning: #f5a623;
+	--color-warning-darker: #f49b0b;
+
+	/*
+			LAYOUT
+	*/
+	--unit: 4ru;
+	--layout-unit: 8ru;
+
+	--layout-small: 600px;
+	--layout-medium: 1024px;
+	--layout-large: 1440px;
+	--layout-wide: 1920px;
+
+	/* 600px:  8 16 16 */
+	/* 720px:  8 24 24 */
+	/* 840px: 12 24 24 */
+
+	/*
+			SHADOWS
+	*/
+	--shadow-smallest: 0 4ru 8ru rgba(0, 0, 0, 0.12);
+	--shadow-small: 0 5ru 10ru rgba(0, 0, 0, 0.12);
+	--shadow-medium: 0 8ru 30ru rgba(0, 0, 0, 0.12);
+	--shadow-large: 0 30ru 60ru rgba(0, 0, 0, 0.12);
+	--shadow-hover: 0 30ru 60ru rgba(0, 0, 0, 0.12);
+	--shadow-sticky: 0 12ru 10ru -10ru rgba(0, 0, 0, 0.12);
+
+	/*
+			TYPOGRAPHY
+	*/
+	--font-sans: "Noto Sans", sans-serif;
+	--font-serif: "Noto Serif", serif;
+	--font-display: "DM Serif Display", sans-serif;
+	--font-monospace: var(--html-font-monospace);
+
+	--font-primary: var(--font-sans);
+	--font-secondary: var(--font-serif);
+	--font-alternative: var(--html-font-system);
+
+	--font-light: 300;
+	--font-regular: 400;
+	--font-medium: 500;
+	--font-bold: 700;
+
+	/* https://type-scale.com/?size=16&scale=1.200 */
+	--font-size-1: 9.26ru;
+	--font-size-2: 11.11ru;
+	--font-size-3: 13.33ru;
+	--font-size-4: 16ru;
+	--font-size-5: 19.2ru;
+	--font-size-6: 23.04ru;
+	--font-size-7: 27.65ru;
+	--font-size-8: 33.18ru;
+	--font-size-9: 39.81ru;
+
+	/*
+			COMPONENTS
+	*/
+
+	/* minimum touch target size 48 x 48 */
+	--touch-target: 48px;
+
+	--content-grid-columns: 4ru;
+	--content-grid-gutter: 16ru;
+	--content-grid-margin: 16ru;
+
+	--component-density: 4;
+
+	--layout-bar-status: 24px;
+	--layout-bar-actions: 56px;
+	--layout-bar-vertical: 72px;
+}

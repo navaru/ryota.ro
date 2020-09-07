@@ -1,0 +1,23 @@
+{
+	"private": true,
+	"type": "module",
+	"engines": {
+		"node": "^14"
+	},
+	"scripts": {
+		"server": "nore develop server --debug",
+		"client": "nore develop client --debug",
+		"build:server": "nore develop server --debug",
+		"build:client": "nore develop client --debug",
+		"deploy:client": "./scripts/server.sh deploy:client",
+		"deploy:server": "./scripts/server.sh deploy:server",
+		"deploy": "./scripts/server.sh deploy",
+		"sync:public": "./scripts/server.sh sync:public",
+		"restart:server": "./scripts/server.sh restart"
+	},
+	"workspaces": [
+		"nore/bundler/*",
+		"nore/packages/*",
+		"nore/plugins/*"
+	]
+}

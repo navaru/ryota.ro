@@ -1,0 +1,30 @@
+.container {
+	position: relative;
+	background: #fff;
+	padding: 80px 0;
+	margin: -80px 0;
+}
+
+.sample {
+	margin-top: 20ru;
+}
+.sample:first-of-type {
+	margin-top: 40ru;
+}
+.sample > code:first-child {
+	display: inline-block;
+	width: 64ru;
+	margin-right: 12ru;
+	font-size: 12ru;
+	text-align: right;
+}
+
+.flex {
+	display: flex;
+}
+.flex > .half {
+	width: 50%;
+}
+.flex > .half > .block + .block {
+	margin-top: 20ru;
+}

@@ -1,0 +1,16 @@
+menu:
+- label: Ateliere
+  link: /ateliere
+- label: Cursuri
+  link: /cursuri
+- label: Dezvoltare personală
+  link: /dezvoltare-personala
+- label: Servicii
+  link: /servicii
+- label: Articole
+  link: /articole
+- label: Contact
+  link: /contact
+
+notion:
+  blog: 2733253dca6a4d79a975b812caf7de47
