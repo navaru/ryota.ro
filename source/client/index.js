@@ -1,5 +1,5 @@
 import global from "@nore/std/global";
-import { http } from "@nore/pwa";
+import { http } from "@nore/web";
 import Ryota from "$ryota/index.svelte";
 import ro from "$ryota/lang/ro";
 

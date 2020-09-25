@@ -1,5 +1,5 @@
 <script>
-	import { Link } from "@nore/pwa";
+	import { Link } from "@nore/web";
 
 	export let links = [];
 	export let open = false;
@@ -42,7 +42,7 @@
 		line-height: 60ru;
 		font-size: 18ru;
 		font-weight: 300;
-		letter-spacing: .05em;
+		letter-spacing: 0.05em;
 		text-transform: uppercase;
 		cursor: pointer;
 		user-select: none;

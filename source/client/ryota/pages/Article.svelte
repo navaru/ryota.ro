@@ -1,5 +1,5 @@
 <script context="module">
-	import { http } from "@nore/pwa";
+	import { http } from "@nore/web";
 	import MainBar from "$ryota/components/MainBar";
 	import Loader from "$ryota/components/Loader";
 	import facebook from "$public/icons/facebook.svg";

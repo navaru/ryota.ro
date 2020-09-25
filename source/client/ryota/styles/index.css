@@ -1,4 +1,4 @@
-@import "@nore/pwa/css";
+@import "@nore/web/css";
 @import "$ryota/styles/theme.css";
 @import "$ryota/styles/globals.css";
 @import "$ryota/styles/notion.css";

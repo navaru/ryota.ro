@@ -1,6 +1,5 @@
 import { ms } from "@nore/std/time";
 import { log, on, use } from "@nore/cms";
-import { http } from "@nore/pwa";
 import Notion from "@nore/notion";
 import config from "$server/config";
 
@@ -9,7 +8,7 @@ on("ready", async () => {
 	const notion = new Notion({ token: config.notion.token });
 	const cache = new Map();
 
-	http.get("/api/notion/page/:id", async ({ params }, reply) => {
+	http.on("GET /api/notion/page/:id", async ({ params }, reply) => {
 		if (params.id?.length < 32) {
 			return reply.error(400, "Invalid record ID");
 		}
@@ -30,7 +29,7 @@ on("ready", async () => {
 		return page;
 	});
 
-	http.get("/api/notion/sync/:id", async ({ params }, reply) => {
+	http.on("GET /api/notion/sync/:id", async ({ params }, reply) => {
 		if (cache.has(params.id)) {
 			cache.delete(params.id);
 		} else {

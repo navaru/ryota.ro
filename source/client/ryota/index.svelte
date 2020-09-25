@@ -1,6 +1,6 @@
 <script context="module">
 	import "$ryota/styles";
-	import { Application, Scope, loadable } from "@nore/pwa";
+	import { Application, Scope, loadable } from "@nore/web";
 	import Suspended from "./pages/Suspended";
 
 	const Home = loadable(() => import("./pages/Home"));

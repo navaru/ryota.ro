@@ -1,5 +1,5 @@
 <script>
-	import { http } from "@nore/pwa";
+	import { http } from "@nore/web";
 	import { onMount } from "svelte";
 	import logoRyota from "$public/ryota_logo_background.svg";
 	import Articles from "$ryota/components/Articles";
@@ -135,9 +135,7 @@
 
 	<b class="intro">
 		<b class="intro_title">
-			Institut de Dezvoltare
-			<br />
-			Socială și Emoțională
+			Institut de Dezvoltare <br /> Socială și Emoțională
 		</b>
 		<b class="intro_subtitle">
 			Este nevoie de-o schimbare, vechile obiceiuri nu creează noi oportunități.

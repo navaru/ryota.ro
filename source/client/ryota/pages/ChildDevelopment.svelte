@@ -28,25 +28,25 @@
 			}
 
 			if (block.type === "collection_view") {
-				section.articles = block.collection.pages.map((page) => ({
+				section.articles = block.collection.pages.map(page => ({
 					link: page.id,
 					title: page.title,
 					tagline: page.attributes.Tagline,
 					category: page.attributes.Category,
-				}))
+				}));
 
 				sections.push(section);
 				section = {};
 			}
 		}
 
-		return sections
+		return sections;
 	}
 </script>
 
 <script>
 	import { onMount } from "svelte";
-	import { http, Link } from "@nore/pwa";
+	import { http, Link } from "@nore/web";
 
 	export let id = null;
 
@@ -57,12 +57,12 @@
 	onMount(() => {
 		isLoading = true;
 
-		http.get(`/api/notion/page/${id}`).then((reply) => {
+		http.get(`/api/notion/page/${id}`).then(reply => {
 			isLoading = false;
 			page = reply.body;
 			sections = getSections(page);
-		})
-	})
+		});
+	});
 </script>
 
 <style>
@@ -72,8 +72,8 @@
 	}
 	.loader {
 		margin-top: 28vh;
-    display: flex;
-    justify-content: center;
+		display: flex;
+		justify-content: center;
 	}
 	.title {
 		margin-top: 40ru;

@@ -1,5 +1,5 @@
 <script context="module">
-	import { http } from "@nore/pwa";
+	import { http } from "@nore/web";
 	import ro from "$ryota/lang/ro";
 
 	export function load({ id }) {

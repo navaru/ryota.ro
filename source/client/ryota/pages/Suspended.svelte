@@ -1,5 +1,5 @@
 <script>
-	import { Link } from "@nore/pwa"
+	import { Link } from "@nore/web";
 	import MainBar from "$ryota/components/MainBar";
 </script>
 
@@ -59,12 +59,18 @@
 		<b class="note content">
 			<b class="title">Activitate temporar suspendată</b>
 			<b class="description">
-				Momentan activitatea institutului este suspendată <br/> datorită
-				<Link class="link" newtab to="https://en.wikipedia.org/wiki/COVID-19_pandemic" label="pandemiei COVID-19" />.
+				Momentan activitatea institutului este suspendată <br /> datorită
+				<Link
+					class="link"
+					newtab
+					to="https://en.wikipedia.org/wiki/COVID-19_pandemic"
+					label="pandemiei COVID-19" />.
 			</b>
 			<b class="divider" />
 			<b class="alternative">
-				Vă recomandăm <Link class="link" to="/articole" label="secțiunea de articole" />, unde postăm saptămânal conținut relevant situației actuale:
+				Vă recomandăm
+				<Link class="link" to="/articole" label="secțiunea de articole" />, unde
+				postăm saptămânal conținut relevant situației actuale:
 			</b>
 			<Link class="cta" to="/articole" label="Secțiunea de articole" />
 		</b>

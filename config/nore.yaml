@@ -1,17 +1,11 @@
-server:
-  url: https://ryota.ro
-  path: /apps/ryota.ro
-  ip: 199.247.17.83
-  user: root
+bundles:
+- handle: server
+  target: node
 
-platform:
-  url: https://ryota.ro
-  log: .nore/nore.log
-  caddy: .nore/caddy.conf
-  nginx: .nore/nginx.conf
+- handle: client
+  target: web
 
-shared:
-  mode: development
+general:
   aliases:
     $public: public
     $server: source/server
@@ -19,16 +13,14 @@ shared:
     $design: source/client/design
     $ryota: source/client/ryota
 
-manifest:
-  short_name: Ryota
-  name: Ryota - Institut de Dezvoltare Socială și Emoțională
-  description: Ryota susține dezvoltarea emoțională și socială folosind tehnici vesele pentru copii și metode productive pentru adulți
-  background_color: "#3367D6"
-  theme_color: "#3367D6"
+local:
+  mode: development
+  url: http://ryota.nore
 
-bundles:
-- handle: server
-  target: node
-
-- handle: client
-  target: web
+server:
+  mode: production
+  url: https://ryota.ro
+  remote:
+    ip: 199.247.17.83
+    user: root
+    path: /apps/ryota.ro

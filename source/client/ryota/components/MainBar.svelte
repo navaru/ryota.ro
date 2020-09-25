@@ -1,5 +1,5 @@
 <script>
-	import { Link } from "@nore/pwa";
+	import { Link } from "@nore/web";
 	import iconMenu from "$public/icons/menu.svg";
 	import ryotaLogo from "$public/ryota_logo.svg";
 	import MainMenu from "$ryota/components/MainMenu";
@@ -12,7 +12,7 @@
 	let isMenuOpen = false;
 
 	function toggleMenu() {
-		isMenuOpen = !isMenuOpen
+		isMenuOpen = !isMenuOpen;
 	}
 </script>
 
@@ -60,7 +60,7 @@
 		padding: 0 12ru;
 		font-size: 14ru;
 		font-family: var(--font-primary);
-		letter-spacing: .035em;
+		letter-spacing: 0.035em;
 		text-transform: uppercase;
 		color: var(--color-dark-50);
 	}
@@ -77,7 +77,7 @@
 	}
 	.menu_toggle > :global(svg) {
 		width: 24ru;
-		fill: #5B544C;
+		fill: #5b544c;
 	}
 	@media (min-width: 600px) {
 		.ryota_logo {
@@ -117,9 +117,7 @@
 			{/each}
 		</b>
 		<b class="ryota_symbol">
-			<Link to="/">
-				<img src="/ryota_symbol.png" alt="Ryota symbol" />
-			</Link>
+			<Link to="/"><img src="/ryota_symbol.png" alt="Ryota symbol" /></Link>
 		</b>
 		<b class="ryota_logo">
 			<Link to="/">

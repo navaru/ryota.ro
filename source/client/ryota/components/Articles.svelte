@@ -1,7 +1,7 @@
 <script>
-	import { Link } from "@nore/pwa";
+	import { Link } from "@nore/web";
 	import iconLink from "$public/icons/link.svg";
-	import getImages from "$ryota/utils/getAbstractImages.js"
+	import getImages from "$ryota/utils/getAbstractImages.js";
 
 	export let list = [];
 
@@ -11,6 +11,7 @@
 		return layout ? `/${layout}/${link}` : `/articol/${link}`;
 	}
 </script>
+
 <style>
 	.container {
 		display: flex;
@@ -129,13 +130,12 @@
 <b class="container">
 	{#each list as article, index}
 		<Link class="article" to={getLink(article)}>
-			<b class="image">
-				<img src={images[index]} alt={article.title} />
-			</b>
+			<b class="image"> <img src={images[index]} alt={article.title} /> </b>
 			<b class="info">
 				<b class="category">{article.category}</b>
 				<b class="tagline">{article.tagline}</b>
-				<b class="title">{article.title}{@html iconLink}</b>
+				<b class="title">{article.title}
+					{@html iconLink}</b>
 			</b>
 		</Link>
 	{/each}
