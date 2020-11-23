@@ -1,8 +1,9 @@
 {
+	"name": "ryota.ro",
 	"private": true,
 	"type": "module",
 	"engines": {
-		"node": "^14"
+		"node": "^15"
 	},
 	"scripts": {
 		"server": "nore develop server --debug",

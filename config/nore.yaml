@@ -1,23 +1,14 @@
-bundles:
-- handle: server
-  target: node
+# shared bundle config
+aliases:
+  $design: source/client/design
+  $ryota: source/client/ryota
 
-- handle: client
-  target: web
-
-general:
-  aliases:
-    $public: public
-    $server: source/server
-    $client: source/client
-    $design: source/client/design
-    $ryota: source/client/ryota
-
-local:
+# environments
+development:
   mode: development
   url: http://ryota.nore
 
-server:
+production:
   mode: production
   url: https://ryota.ro
   remote:
