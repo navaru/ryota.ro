@@ -24,7 +24,7 @@
 	color: #8a7861;
 }
 .notion .tagline::after {
-	content: "";
+	content: '';
 	position: absolute;
 	top: 0;
 	left: calc(50% - 40ru);
@@ -139,7 +139,7 @@
 	position: relative;
 }
 .notion .list:not(.is_ordered)::before {
-	content: "";
+	content: '';
 	float: left;
 	margin-right: -25em;
 	position: relative;

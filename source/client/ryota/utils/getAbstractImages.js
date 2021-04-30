@@ -1,4 +1,4 @@
-export default count => {
+export default (count) => {
 	const generated = [];
 	const max = 40;
 

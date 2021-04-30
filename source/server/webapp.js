@@ -1,18 +1,18 @@
-import { log, on, use } from "@nore/cms";
-import { render } from "@nore/web";
-import loadManifest from "$server/utils/loadManifest.js";
-import template from "$client/index.html";
-import ryota from "$ryota/index";
+import { log, on, use } from '@nore/cms';
+import { render } from '@nore/web';
+import loadManifest from '$server/utils/loadManifest.js';
+import template from '$client/index.html';
+import ryota from '$ryota/index';
 
-on("ready", async () => {
-	const http = await use("nore/http");
+on('ready', async () => {
+	const http = await use('nore/http');
 
-	http.on("GET *", async (request, reply) => {
+	http.on('GET *', async (request, reply) => {
 		const manifest = await loadManifest();
 		const state = { url: request.url };
 		const rendered = await render(ryota, state);
 
-		reply.type("text/html");
+		reply.type('text/html');
 
 		return template({
 			state: JSON.stringify(rendered.state),

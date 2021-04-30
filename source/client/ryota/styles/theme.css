@@ -75,9 +75,9 @@
 	/*
 			TYPOGRAPHY
 	*/
-	--font-sans: "Noto Sans", sans-serif;
-	--font-serif: "Noto Serif", serif;
-	--font-display: "DM Serif Display", sans-serif;
+	--font-sans: 'Noto Sans', sans-serif;
+	--font-serif: 'Noto Serif', serif;
+	--font-display: 'DM Serif Display', sans-serif;
 	--font-monospace: var(--html-font-monospace);
 
 	--font-primary: var(--font-sans);

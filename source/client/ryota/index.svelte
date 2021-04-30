@@ -1,12 +1,12 @@
 <script context="module">
 	import "$ryota/styles";
-	import { Application, Scope, loadable } from "@nore/web";
+	import { Application, Scope, dynamic } from "@nore/web";
 	import Suspended from "./pages/Suspended";
 
-	const Home = loadable(() => import("./pages/Home"));
-	const Articles = loadable(() => import("./pages/Articles"));
-	const Article = loadable(() => import("./pages/Article"));
-	const ChildDevelopment = loadable(() => import("./pages/ChildDevelopment"));
+	const Home = dynamic(() => import("./pages/Home"));
+	const Articles = dynamic(() => import("./pages/Articles"));
+	const Article = dynamic(() => import("./pages/Article"));
+	const ChildDevelopment = dynamic(() => import("./pages/ChildDevelopment"));
 </script>
 
 <style>
